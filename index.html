@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Zoom4Grade - Homepage</title>
+<meta name="robots" content="noindex, nofollow" /> 
+<meta name="googlebot" content="noindex, nofollow" />
+<meta name="bingbot" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<!--CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link href="css/app.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header id="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Zoom4Grade</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a id="loginMenu" href="javascript://" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                    <li><a id="accountMenu" href="#" style="display: none;"></a></li>
+                    <li><a id="logoutMenu" href="/logout" style="display: none;">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main id="main">
+    <div class="container-fluid">
+        <div class="playlist open">
+            <span class="toggle"><i class="fa fa-caret-left"></i></span>
+            <div id="videos" class="videos">
+                <div class="video" data-source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">Big Buck Bunny</span>
+                    <video width="100%">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">Elephants Dream</span>
+                    <video width="100%">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">For Bigger Blazes</span>
+                    <video width="100%">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">For Bigger Escapes</span>
+                    <video width="100%">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">Tears Of Steel</span>
+                    <video width="100%">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">Sintel</span>
+                    <video width="100%">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">For Bigger Joyrides</span>
+                    <video width="100%">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="images/video.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">Video 8</span>
+                    <video width="100%">
+                        <source src="images/video.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="images/video.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">Video 9</span>
+                    <video width="100%">
+                        <source src="images/video.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+                <div class="video" data-source="images/video.mp4" data-type="video/mp4" data-toggle="modal" data-target="#videoModal">
+                    <span class="video-title">Video 10</span>
+                    <video width="100%">
+                        <source src="images/video.mp4#t=9" type="video/mp4">
+                    </video>
+                    <div class="overlay"><span class="play"></span></div>
+                </div>
+            </div><!-- /.videos -->
+        </div><!-- /.playlist -->
+        <div class="workspace">
+            <div class="logged_in">
+                <div class="draw-title pull-left">Drawing 1</div>
+                <div class="draw-save pull-right">Save</div>
+            </div>
+            <div class="canvas">
+                <div class="canvas-drawer">
+                    <canvas id="drawer"></canvas>
+                    <div class="canvas-toolbar top-right-bar">
+                        <span class="tool fullscreen">Fullscreen</span>
+                        <span class="tool exit-fullscreen">Exit fullscreen</span>
+                    </div>
+                    <div class="canvas-toolbar bottom-right-bar">
+                        <span class="tool rotate-360">360</span>
+                    </div>
+                </div>
+                <div class="summary">
+                    <div class="summary-title">
+                        <span class="arrow"><i class="fa fa-caret-up"></i> SUMMARY</span>
+                        <span class="btn btn-report pull-right">Click here for full PDF report</span>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="summary-body">
+                        <div class="column">
+                            <div class="column-title">A Series</div>
+                            <div class="column-body">
+                                <p>What is Lorem Ipsum?</p>
+                                <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Why do we use it?</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                <p>Where does it come from?</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                <p>Where can I get some?</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="column-title">B Series</div>
+                            <div class="column-body">
+                                <p>What is Lorem Ipsum?</p>
+                                <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Why do we use it?</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                <p>Where does it come from?</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                <p>Where can I get some?</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="column-title">C Series</div>
+                            <div class="column-body">
+                                <p>What is Lorem Ipsum?</p>
+                                <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Why do we use it?</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                <p>Where does it come from?</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                <p>Where can I get some?</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="column-title">D Series</div>
+                            <div class="column-body">
+                                <p>What is Lorem Ipsum?</p>
+                                <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Why do we use it?</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                <p>Where does it come from?</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                <p>Where can I get some?</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="column-title">E Series</div>
+                            <div class="column-body">
+                                <p>What is Lorem Ipsum?</p>
+                                <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Why do we use it?</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                <p>Where does it come from?</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                <p>Where can I get some?</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.canvas -->
+            <div class="toolbar">
+                <ul class="controls">
+                    <li class="control control-1">
+                        <label>
+                            <span class="icon"><img src="images/controls/c1.png" /></span>
+                            <span class="text">Polyline 1</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c1" />
+                        </label>
+                    </li>
+                    <li class="control control-2">
+                        <label>
+                            <span class="icon"><img src="images/controls/c2.png" /></span>
+                            <span class="text">Polyline 2</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c2" />
+                        </label>
+                    </li>
+                    <li class="control control-3">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Color</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c3" />
+                        </label>
+                    </li>
+                    <li class="control control-4">
+                        <label>
+                            <span class="icon"><img src="images/controls/c4.png" /></span>
+                            <span class="text">Property 1</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c4" />
+                        </label>
+                        <ul class="sub-controls">
+                            <li class="control control-4-1">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">A Property 1</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c4-a" />
+                                </label>
+                                <ul class="sub-controls">
+                                    <li class="control control-4-1-1 blur">
+                                        <label>
+                                            <span class="text">A1</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a1" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-2 blur">
+                                        <label>
+                                            <span class="text">A2</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a2" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-3 blur">
+                                        <label>
+                                            <span class="text">A3</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a3" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-4 blur">
+                                        <label>
+                                            <span class="text">A4</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a4" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-5 blur">
+                                        <label>
+                                            <span class="text">A5</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a5" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-6 blur">
+                                        <label>
+                                            <span class="text">A6</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a6" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-7 blur">
+                                        <label>
+                                            <span class="text">A7</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a7" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-8 blur">
+                                        <label>
+                                            <span class="text">A8</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a8" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-9 blur">
+                                        <label>
+                                            <span class="text">A9</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a9" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-10 blur">
+                                        <label>
+                                            <span class="text">A10</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a10" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-11 blur">
+                                        <label>
+                                            <span class="text">A11</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a11" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-12 blur">
+                                        <label>
+                                            <span class="text">A12</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a12" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-13 blur">
+                                        <label>
+                                            <span class="text">A13</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a13" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-14 blur">
+                                        <label>
+                                            <span class="text">A14</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a14" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-15 blur">
+                                        <label>
+                                            <span class="text">A15</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a15" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-16 blur">
+                                        <label>
+                                            <span class="text">A16</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a16" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-17 blur">
+                                        <label>
+                                            <span class="text">A17</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a17" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-18 blur">
+                                        <label>
+                                            <span class="text">A18</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a18" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-19">
+                                        <label>
+                                            <span class="text">A19</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a19" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-20">
+                                        <label>
+                                            <span class="text">A20</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a20" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-21">
+                                        <label>
+                                            <span class="text">A21</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a21" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-22">
+                                        <label>
+                                            <span class="text">A22</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a22" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-23">
+                                        <label>
+                                            <span class="text">A23</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a23" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-24">
+                                        <label>
+                                            <span class="text">A24</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a24" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-25">
+                                        <label>
+                                            <span class="text">A25</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a25" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-26">
+                                        <label>
+                                            <span class="text">A26</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a26" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-27">
+                                        <label>
+                                            <span class="text">A27</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a27" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-28">
+                                        <label>
+                                            <span class="text">A28</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a28" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-29">
+                                        <label>
+                                            <span class="text">A29</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a29" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-30">
+                                        <label>
+                                            <span class="text">A30</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a30" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-31">
+                                        <label>
+                                            <span class="text">A31</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a31" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-32">
+                                        <label>
+                                            <span class="text">A32</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a32" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-33">
+                                        <label>
+                                            <span class="text">A33</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a33" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-34">
+                                        <label>
+                                            <span class="text">A34</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a34" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-35">
+                                        <label>
+                                            <span class="text">A35</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a35" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-36">
+                                        <label>
+                                            <span class="text">A36</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a36" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-37">
+                                        <label>
+                                            <span class="text">A37</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a37" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-38">
+                                        <label>
+                                            <span class="text">A38</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a38" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-39">
+                                        <label>
+                                            <span class="text">A39</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a39" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-40">
+                                        <label>
+                                            <span class="text">A40</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a40" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-4-1-41">
+                                        <label>
+                                            <span class="text">A41</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c4-a41" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="control control-4-2 blur">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">B Property 1</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c4-b" />
+                                </label>
+                            </li>
+                            <li class="control control-4-3 blur">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">C Property 1</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c4-c" />
+                                </label>
+                            </li>
+                            <li class="control control-4-4 blur">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">S Property 1</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c4-s" />
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="control control-5 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c5.png" /></span>
+                            <span class="text">Add Property 1</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c5" />
+                        </label>
+                    </li>
+                    <li class="control control-6">
+                        <label>
+                            <span class="icon"><img src="images/controls/c4.png" /></span>
+                            <span class="text">Property 2</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c6" />
+                        </label>
+                        <ul class="sub-controls">
+                            <li class="control control-6-1">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Group A</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c6-a" />
+                                </label>
+                                <ul class="sub-controls">
+                                    <li class="control control-6-1-1">
+                                        <label>
+                                            <span class="text">1</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c6-a1" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-6-1-2">
+                                        <label>
+                                            <span class="text">2</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c6-a2" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-6-1-3 blur">
+                                        <label>
+                                            <span class="text">3</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c6-a3" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-6-1-4 blur">
+                                        <label>
+                                            <span class="text">4</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c6-a4" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-6-1-5 blur">
+                                        <label>
+                                            <span class="text">5</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c6-a5" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-6-1-6 blur">
+                                        <label>
+                                            <span class="text">6</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c6-a6" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-6-1-7 blur">
+                                        <label>
+                                            <span class="text">7</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c6-a7" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="control control-6-2 blur">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Group B</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c6-b" />
+                                </label>
+                            </li>
+                            <li class="control control-6-3 blur">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Group C</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c6-c" />
+                                </label>
+                            </li>
+                            <li class="control control-6-4 blur">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Group D</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c6-d" />
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="control control-7 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c5.png" /></span>
+                            <span class="text">Add Property 2</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c7" />
+                        </label>
+                    </li>
+                    <li class="control control-8">
+                        <label>
+                            <span class="icon"><img src="images/controls/c8.png" /></span>
+                            <span class="text">Property 3</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c8" />
+                        </label>
+                    </li>
+                    <li class="control control-9">
+                        <label>
+                            <span class="icon"><img src="images/controls/c4.png" /></span>
+                            <span class="text">Property 4</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c9" />
+                        </label>
+                        <ul class="sub-controls">
+                            <li class="control control-9-1">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Area 1</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c9-a1" />
+                                </label>
+                                <ul class="sub-controls">
+                                    <li class="control control-9-1-1">
+                                        <label>
+                                            <span class="text">1.1</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.1" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-2">
+                                        <label>
+                                            <span class="text">1.2</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.2" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-3">
+                                        <label>
+                                            <span class="text">1.3</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.3" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-4">
+                                        <label>
+                                            <span class="text">1.4</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.4" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-5">
+                                        <label>
+                                            <span class="text">1.5</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.5" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-6">
+                                        <label>
+                                            <span class="text">1.6</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.6" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-7">
+                                        <label>
+                                            <span class="text">1.7</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.7" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-8">
+                                        <label>
+                                            <span class="text">1.8</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.8" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-9">
+                                        <label>
+                                            <span class="text">1.9</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.9" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-10">
+                                        <label>
+                                            <span class="text">1.10</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.10" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-11">
+                                        <label>
+                                            <span class="text">1.11</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.11" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-1-12">
+                                        <label>
+                                            <span class="text">1.12</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a1.12" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="control control-9-2">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Area 2</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c9-a2" />
+                                </label>
+                                <ul class="sub-controls">
+                                    <li class="control control-9-2-1">
+                                        <label>
+                                            <span class="text">2.1</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.1" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-2">
+                                        <label>
+                                            <span class="text">2.2</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.2" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-3">
+                                        <label>
+                                            <span class="text">2.3</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.3" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-4">
+                                        <label>
+                                            <span class="text">2.4</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.4" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-5">
+                                        <label>
+                                            <span class="text">2.5</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.5" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-6">
+                                        <label>
+                                            <span class="text">2.6</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.6" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-7">
+                                        <label>
+                                            <span class="text">2.7</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.7" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-8">
+                                        <label>
+                                            <span class="text">2.8</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.8" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-9">
+                                        <label>
+                                            <span class="text">2.9</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.9" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-10">
+                                        <label>
+                                            <span class="text">2.10</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.10" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-11">
+                                        <label>
+                                            <span class="text">2.11</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.11" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-2-12">
+                                        <label>
+                                            <span class="text">2.12</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a2.12" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="control control-9-3">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Area 3</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c9-a3" />
+                                </label>
+                                <ul class="sub-controls">
+                                    <li class="control control-9-3-1">
+                                        <label>
+                                            <span class="text">3.1</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.1" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-2">
+                                        <label>
+                                            <span class="text">3.2</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.2" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-3">
+                                        <label>
+                                            <span class="text">3.3</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.3" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-4">
+                                        <label>
+                                            <span class="text">3.4</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.4" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-5">
+                                        <label>
+                                            <span class="text">3.5</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.5" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-6">
+                                        <label>
+                                            <span class="text">3.6</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.6" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-7">
+                                        <label>
+                                            <span class="text">3.7</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.7" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-8">
+                                        <label>
+                                            <span class="text">3.8</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.8" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-9">
+                                        <label>
+                                            <span class="text">3.9</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.9" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-10">
+                                        <label>
+                                            <span class="text">3.10</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.10" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-11">
+                                        <label>
+                                            <span class="text">3.11</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.11" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-12">
+                                        <label>
+                                            <span class="text">3.12</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.12" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-13">
+                                        <label>
+                                            <span class="text">3.13</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.13" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-14">
+                                        <label>
+                                            <span class="text">3.14</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.14" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-15">
+                                        <label>
+                                            <span class="text">3.15</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.15" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-16">
+                                        <label>
+                                            <span class="text">3.16</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.16" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-17">
+                                        <label>
+                                            <span class="text">3.17</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.17" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-3-18">
+                                        <label>
+                                            <span class="text">3.18</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a3.18" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="control control-9-4">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Area 4</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c9-a4" />
+                                </label>
+                                <ul class="sub-controls">
+                                    <li class="control control-9-4-1">
+                                        <label>
+                                            <span class="text">4.1</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.1" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-2">
+                                        <label>
+                                            <span class="text">4.2</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.2" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-3">
+                                        <label>
+                                            <span class="text">4.3</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.3" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-4">
+                                        <label>
+                                            <span class="text">4.4</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.4" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-5">
+                                        <label>
+                                            <span class="text">4.5</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.5" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-6">
+                                        <label>
+                                            <span class="text">4.6</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.6" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-7">
+                                        <label>
+                                            <span class="text">4.7</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.7" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-8">
+                                        <label>
+                                            <span class="text">4.8</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.8" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-9">
+                                        <label>
+                                            <span class="text">4.9</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.9" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-10">
+                                        <label>
+                                            <span class="text">4.10</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.10" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-11">
+                                        <label>
+                                            <span class="text">4.11</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.11" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-12">
+                                        <label>
+                                            <span class="text">4.12</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.12" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-13">
+                                        <label>
+                                            <span class="text">4.13</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.13" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-4-14">
+                                        <label>
+                                            <span class="text">4.14</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a4.14" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="control control-9-5">
+                                <label>
+                                    <span class="icon"></span>
+                                    <span class="text">Area 5</span>
+                                    <input type="radio" class="control__input hidden" name="control" value="c9-a5" />
+                                </label>
+                                <ul class="sub-controls">
+                                    <li class="control control-9-5-1">
+                                        <label>
+                                            <span class="text">5.1</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a5.1" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-5-2">
+                                        <label>
+                                            <span class="text">5.2</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a5.2" />
+                                        </label>
+                                    </li>
+                                    <li class="control control-9-5-3">
+                                        <label>
+                                            <span class="text">5.3</span>
+                                            <input type="radio" class="control__input hidden" name="control" value="c9-a5.3" />
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="control control-10">
+                        <label>
+                            <span class="icon"><img src="images/controls/c10.png" /></span>
+                            <span class="text">Property 5</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c10" />
+                        </label>
+                    </li>
+                    <li class="control control-11">
+                        <label>
+                            <span class="icon"><img src="images/controls/c11.png" /></span>
+                            <span class="text">Polyline 3</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c11" />
+                        </label>
+                    </li>
+                    <li class="control control-12">
+                        <label>
+                            <span class="icon"><img src="images/controls/c12.png" /></span>
+                            <span class="text">Polyline 4</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c12" />
+                        </label>
+                    </li>
+                    <li class="control control-13 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c13.png" /></span>
+                            <span class="text">Polyline 4.1</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c13" />
+                        </label>
+                    </li>
+                    <li class="control control-14 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 6</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c14" />
+                        </label>
+                    </li>
+                    <li class="control control-15 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c15.png" /></span>
+                            <span class="text">Polyline 5</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c15" />
+                        </label>
+                    </li>
+                    <li class="control control-16 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c16.png" /></span>
+                            <span class="text">Polyline 6</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c16" />
+                        </label>
+                    </li>
+                    <li class="control control-17 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c17.png" /></span>
+                            <span class="text">Polyline 7</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c17" />
+                        </label>
+                    </li>
+                    <li class="control control-18">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 7</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c18" />
+                        </label>
+                    </li>
+                    <li class="control control-19 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 8</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c19" />
+                        </label>
+                    </li>
+                    <li class="control control-20 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 9</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c20" />
+                        </label>
+                    </li>
+                    <li class="control control-21 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 10</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c21" />
+                        </label>
+                    </li>
+                    <li class="control control-22 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 11</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c22" />
+                        </label>
+                    </li>
+                    <li class="control control-23 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 12</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c23" />
+                        </label>
+                    </li>
+                    <li class="control control-24 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 13</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c24" />
+                        </label>
+                    </li>
+                    <li class="control control-25 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 14</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c25" />
+                        </label>
+                    </li>
+                    <li class="control control-26 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 15</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c26" />
+                        </label>
+                    </li>
+                    <li class="control control-27 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 16</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c27" />
+                        </label>
+                    </li>
+                    <li class="control control-28 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 17</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c28" />
+                        </label>
+                    </li>
+                    <li class="control control-29 blur" data-toggle="tooltip" data-placement="bottom" title="UNDER DEVELOPMENT">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 18</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c29" />
+                        </label>
+                    </li>
+                    <li class="control control-30">
+                        <label>
+                            <span class="icon"><img src="images/controls/c3.png" /></span>
+                            <span class="text">Property 19</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c30" />
+                        </label>
+                    </li>
+                    <li class="control control-31">
+                        <label>
+                            <span class="icon"><img src="images/controls/c8.png" /></span>
+                            <span class="text">Horizontal Vol</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c31" />
+                        </label>
+                    </li>
+                    <li class="control control-32">
+                        <label>
+                            <span class="icon"><img src="images/controls/c32.png" /></span>
+                            <span class="text">Property 20 (%)</span>
+                            <input type="radio" class="control__input hidden" name="control" value="c32" />
+                        </label>
+                    </li>
+                    <li class="control-switch">
+                        <label class="icon">
+                            <input type="checkbox" class="control__input hidden" name="switch" value="switch" />
+                        </label>
+                        <span class="prev"><img src="images/switch-prev.png" /></span>
+                        <span class="text">Switch</span>
+                        <span class="next"><img src="images/switch-next.png" /></span>
+                    </li>
+                </ul><!-- /.controls -->
+            </div><!-- /.toolbar -->
+        </div><!-- /.workspace -->
+        <div class="clearfix"></div>
+    </div>
+</main>
+<footer id="footer">
+    <div class="container-fluid">Copyright &copy; 2022 Zoom4Grade. All Rights Reserved.</div>
+</footer>
+<section class="template"></section>
+<div id="videoModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+
+    </div>
+</div>
+
+<!--JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" 
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
